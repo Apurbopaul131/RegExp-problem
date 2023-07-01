@@ -1,7 +1,7 @@
 //Validation of phone numbers
 // +88-01793736293
 const validatePhone = phone =>{
-    const regExp = /(\+88)+?-?01[3-9]\d{8}/g;
+    const regExp = /(\+88)?-?01[3-9]\d{8}/g;
     if(regExp.test(phone)){
         return true;
     }
